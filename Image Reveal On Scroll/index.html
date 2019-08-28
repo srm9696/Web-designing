@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image reveal on scroll</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<section>
+			<div class="bg">
+				
+			</div>
+	</section>
+	<script 
+	src="https://code.jquery.com
+	/jquery-3.3.1.min.js"></script>
+   <script type="text/javascript">
+   	$(document).ready(function () {
+   		$(window).scroll(function(){
+   			var scrollpos = $(window).scrollTop();
+   			$ ('.bg').css({
+   				'height' : +(scrollpos)+ 'px'
+   			})
+   		})
+   	})
+   </script>
+</body>
+</html>
