@@ -1,0 +1,55 @@
+<html>
+<head><title></title>
+<style>
+body{
+background:red;
+margin:0px;
+padding:0px;
+}
+#topnav{
+background:blue;
+height:40px;
+color:white;
+}
+.bdy{
+background: yellow;
+width: 50%;
+height: 800px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 100px;
+}
+</style>
+</head>
+<body>
+  <div id="topnav">
+     <a href="" >HOME</a>
+     <a href="" >Registration</a>
+     <a href="" >Contact</a>
+     <a href="" >About US</a>
+  </div>
+<div class="bdy">
+  
+</div>
+<script>
+window.onscroll= function() {myFunction()};
+
+var topnav= document.getElementById("topnav");
+var sticky= topnav.offsetTop;
+
+function myFunction(){
+if(window.pageYOffset >= sticky){
+topnav.classList.add("sticky");
+}else{
+topnav.classList.remove("sticky");
+}
+}
+</script>
+</body>
+</html>
